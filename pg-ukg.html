@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG-UKG Classes - Prestij Edu Classes</title>
+    <link rel="stylesheet" href="pg-ukg.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Prestij Edu Classes" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pg-ukg.html" class="active">PG-UKG</a></li>
+                <li><a href="1st-5th.html">Classes 1-5</a></li>
+                <li><a href="6th-8th.html">Classes 6-10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <!-- Blurred Background -->
+        <div class="page-bg-blur"></div>
+        
+        <div class="container">
+            <div class="page-header">
+                <img src="images/pg_icon.png" alt="PG-UKG" class="page-icon">
+                <h1>PG-UKG Classes</h1>
+                <p class="subtitle">Early learning foundation for your little ones</p>
+            </div>
+
+            <div class="fee-structure">
+                <div class="fee-item">
+                    <h3>PG-UKG</h3>
+                    <p class="fee-amount">₹600/month</p>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2>Enroll Your Child Today</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>9450678111</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>prestijeduclasses@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Aamghat, Ghazipur, UP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Prestij Edu Classes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>

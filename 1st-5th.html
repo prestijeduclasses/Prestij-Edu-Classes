@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes 1-5 - Prestij Edu Classes</title>
+    <link rel="stylesheet" href="1st-5th.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Prestij Edu Classes" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pg-ukg.html">PG-UKG</a></li>
+                <li><a href="1st-5th.html" class="active">Classes 1-5</a></li>
+                <li><a href="6th-8th.html">Classes 6-10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <!-- Blurred Background -->
+        <div class="page-bg-blur"></div>
+        
+        <div class="container">
+            <div class="page-hero">
+                <img src="images/1_5icon.png" alt="Classes 1-5" class="page-icon">
+                <span class="hero-badge">Primary Education</span>
+                <h1>Classes 1 to 5</h1>
+                <p class="tagline">Subjects & Fees.</p>
+            </div>
+
+            <div class="class-detail-grid">
+                <div class="class-detail-card">
+                    <img src="images/1_5icon.png" alt="Class 1" class="card-icon">
+                    <h3>Class 1</h3>
+                    <p>All Subjects<br>Fee: ₹600/month<br>₹5000/10 months</p>
+                </div>
+
+                <div class="class-detail-card">
+                    <img src="images/1_5icon.png" alt="Class 2" class="card-icon">
+                    <h3>Class 2</h3>
+                    <p>All Subjects<br>Fee: ₹600/month<br>₹5000/10 months</p>
+                </div>
+
+                <div class="class-detail-card">
+                    <img src="images/1_5icon.png" alt="Class 3" class="card-icon">
+                    <h3>Class 3</h3>
+                    <p>All Subjects<br>Fee: ₹600/month<br>₹5000/10 months</p>
+                </div>
+
+                <div class="class-detail-card">
+                    <img src="images/1_5icon.png" alt="Class 4" class="card-icon">
+                    <h3>Class 4</h3>
+                    <p>All Subjects<br>Fee: ₹650/month<br>₹5500/10 months</p>
+                </div>
+
+                <div class="class-detail-card">
+                    <img src="images/1_5icon.png" alt="Class 5" class="card-icon">
+                    <h3>Class 5</h3>
+                    <p>All Subjects<br>Fee: ₹650/month<br>₹5500/10 months</p>
+                </div>
+            </div>
+
+            <div class="admission-section">
+                <h2>Ready to Get Started?</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>9450678111</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>prestijeduclasses@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Aamghat, Ghazipur, UP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Prestij Edu Classes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
